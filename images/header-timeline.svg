@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 650">
+    <g stroke="#d9d2c5" stroke-width="3" fill="none" opacity=".5">
+        <path d="M120 420H1480"/>
+        <path d="M120 420V380M380 420V380M640 420V380M900 420V380M1160 420V380M1480 420V380"/>
+    </g>
+
+    <g font-family="Arial,sans-serif" fill="#d9d2c5" text-anchor="middle">
+        <text x="120" y="470" font-size="22">1900</text>
+        <text x="380" y="470" font-size="22">1920</text>
+        <text x="640" y="470" font-size="22">1940</text>
+        <text x="900" y="470" font-size="22">1960</text>
+        <text x="1160" y="470" font-size="22">1980</text>
+        <text x="1480" y="470" font-size="22">2000</text>
+    </g>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+<rect width="800" height="500" rx="36" fill="#e8dfcf"/>
+<g stroke="#252525" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<rect x="120" y="205" width="300" height="190" rx="16" fill="#b7aa93"/>
+<rect x="155" y="240" width="230" height="105" rx="8" fill="#252525"/>
+<path d="M190 395h160M220 395l-20 45M320 395l20 45"/>
+<circle cx="610" cy="220" r="95"/>
+<ellipse cx="610" cy="220" rx="95" ry="35"/>
+<path d="M515 220h190M610 125v190"/>
+<path d="M610 125l55-70M610 315l-55 70"/>
+<path d="M420 300c70-10 100-35 130-80M420 330c80 0 120-30 150-65"/>
+</g>
+<text x="60" y="70" font-family="Arial,sans-serif" font-size="28" letter-spacing="5" fill="#252525">1960—1980</text>
+<text x="60" y="105" font-family="Arial,sans-serif" font-size="16" letter-spacing="2" fill="#666">КОМПЬЮТЕРЫ И СПУТНИКИ</text>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+<rect width="800" height="500" rx="36" fill="#e8dfcf"/>
+<g stroke="#252525" stroke-width="7" fill="none">
+<ellipse cx="400" cy="255" rx="190" ry="190"/>
+<path d="M210 255h380M400 65v380M275 95c65 70 65 250 0 320M525 95c-65 70-65 250 0 320"/>
+<path d="M235 150c100 45 230 45 330 0M235 360c100-45 230-45 330 0"/>
+<path d="M400 255L610 150M400 255L230 350M400 255L525 385"/>
+<circle cx="400" cy="255" r="13" fill="#252525"/>
+<circle cx="610" cy="150" r="13" fill="#252525"/>
+<circle cx="230" cy="350" r="13" fill="#252525"/>
+<circle cx="525" cy="385" r="13" fill="#252525"/>
+</g>
+<text x="60" y="70" font-family="Arial,sans-serif" font-size="28" letter-spacing="5" fill="#252525">1990—2000</text>
+<text x="60" y="105" font-family="Arial,sans-serif" font-size="16" letter-spacing="2" fill="#666">ИНТЕРНЕТ</text>
+</svg>
