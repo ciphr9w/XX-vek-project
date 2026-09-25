@@ -2066,3 +2066,29 @@ h2 {
 .object-item:nth-child(6).is-visible {
     transition-delay: 0.55s;
 }
+/* =================================
+   УБИРАЕМ БОЛЬШИЕ ДЕКОРАТИВНЫЕ ГОДА
+================================= */
+
+/* Блок «Один век. Шесть предметов.» */
+.intro::before,
+.intro::after {
+    display: none !important;
+}
+
+/* Блок «1900 vs. 2000» */
+.comparison-section::before,
+.comparison-section::after {
+    display: none !important;
+}
+
+/* Блок с предметами */
+.objects-section::before,
+.objects-section::after {
+    display: none !important;
+}
+
+/* Декоративная лента в шапке */
+.header::before {
+    display: none !important;
+}
