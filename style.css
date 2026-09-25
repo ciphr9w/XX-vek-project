@@ -245,68 +245,9 @@ h2 {
    ДЕКОРАТИВНЫЕ ГОДЫ
 ========================= */
 
-.intro::before {
-    content: "1900";
-
-    position: absolute;
-
-    top: 80px;
-    right: -10px;
-
-    font-size: clamp(80px, 12vw, 150px);
-
-    font-weight: 800;
-    letter-spacing: -8px;
-
-    color: rgba(0, 0, 0, 0.035);
-
-    line-height: 1;
-
-    pointer-events: none;
-
-    z-index: 0;
-}
-
-
+.intro::before,
 .intro::after {
-    content: "2000";
-
-    position: absolute;
-
-    bottom: 40px;
-    left: -10px;
-
-    font-size: clamp(80px, 12vw, 150px);
-
-    font-weight: 800;
-    letter-spacing: -8px;
-
-    color: rgba(0, 0, 0, 0.035);
-
-    line-height: 1;
-
-    pointer-events: none;
-
-    z-index: 0;
-}
-@media (max-width: 700px) {
-
-    .intro::before {
-        top: 100px;
-        right: -5px;
-
-        font-size: 90px;
-        letter-spacing: -5px;
-    }
-
-    .intro::after {
-        bottom: 30px;
-        left: -5px;
-
-        font-size: 90px;
-        letter-spacing: -5px;
-    }
-
+    display: none;
 }
 /* =========================
    TIMELINE SECTION
