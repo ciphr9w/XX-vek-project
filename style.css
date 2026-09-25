@@ -65,35 +65,9 @@ body {
    ========================= */
 
 .header::before {
-
     content: "";
-
-    position: absolute;
-
-    left: 50%;
-    bottom: 35px;
-
-    transform: translateX(-50%);
-
-    width: min(1200px, 90vw);
-    height: 280px;
-
-    background-image:
-        url("images/header-timeline.svg");
-
-    background-repeat: no-repeat;
-
-    background-position: center bottom;
-
-    background-size: contain;
-
-    opacity: 0.32;
-
-    pointer-events: none;
-
-    z-index: 0;
+    display: none;
 }
-
 
 /* =========================
    СОДЕРЖИМОЕ
