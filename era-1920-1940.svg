@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+<rect width="800" height="500" rx="36" fill="#e8dfcf"/>
+<g stroke="#252525" stroke-width="8" stroke-linejoin="round">
+<rect x="205" y="125" width="390" height="245" rx="28" fill="#b7aa93"/>
+<rect x="260" y="165" width="280" height="125" rx="12" fill="#252525"/>
+<path d="M290 270c45-90 85 35 130-55s85 35 110-25" fill="none" stroke="#e8dfcf" stroke-width="5"/>
+<circle cx="295" cy="325" r="20" fill="#e8dfcf"/>
+<circle cx="370" cy="325" r="20" fill="#e8dfcf"/>
+<circle cx="445" cy="325" r="20" fill="#e8dfcf"/>
+<path d="M545 170l90-75M575 210l105-25" fill="none"/>
+</g>
+<path d="M635 95h45M680 95v90" fill="none" stroke="#252525" stroke-width="8"/>
+<text x="60" y="70" font-family="Arial,sans-serif" font-size="28" letter-spacing="5" fill="#252525">1920—1940</text>
+<text x="60" y="105" font-family="Arial,sans-serif" font-size="16" letter-spacing="2" fill="#666">ЭПОХА РАДИО</text>
+</svg>

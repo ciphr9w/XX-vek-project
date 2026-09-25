@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+<rect width="800" height="500" rx="36" fill="#e8dfcf"/>
+<g stroke="#252525" stroke-width="9" stroke-linejoin="round">
+<rect x="170" y="120" width="460" height="285" rx="38" fill="#b7aa93"/>
+<rect x="220" y="160" width="360" height="205" rx="22" fill="#252525"/>
+<path d="M265 310c45-105 80-100 120 0s80 105 130 0" fill="none" stroke="#e8dfcf" stroke-width="6"/>
+<path d="M260 405h280M320 405v35M480 405v35" fill="none"/>
+<circle cx="610" cy="175" r="10" fill="#e8dfcf"/>
+</g>
+<text x="60" y="70" font-family="Arial,sans-serif" font-size="28" letter-spacing="5" fill="#252525">1940—1960</text>
+<text x="60" y="105" font-family="Arial,sans-serif" font-size="16" letter-spacing="2" fill="#666">ТЕЛЕВИДЕНИЕ</text>
+</svg>

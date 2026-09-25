@@ -1,0 +1,2124 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background: #f3efe6;
+
+    color: #202020;
+
+    line-height: 1.6;
+
+    overflow-x: hidden;
+}
+
+
+.header {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    position: relative;
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 50% 35%,
+            rgba(255, 255, 255, 0.08),
+            transparent 35%
+        ),
+        linear-gradient(
+            135deg,
+            #171717,
+            #252525 50%,
+            #111111
+        );
+
+    color: white;
+}
+
+
+/* =========================
+   ЛЕНТА 1900 — 2000
+   ========================= */
+
+.header::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    bottom: 35px;
+
+    transform: translateX(-50%);
+
+    width: min(1200px, 90vw);
+    height: 280px;
+
+    background-image:
+        url("images/header-timeline.svg");
+
+    background-repeat: no-repeat;
+
+    background-position: center bottom;
+
+    background-size: contain;
+
+    opacity: 0.32;
+
+    pointer-events: none;
+
+    z-index: 0;
+}
+
+
+/* =========================
+   СОДЕРЖИМОЕ
+   ========================= */
+
+.header-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 1000px;
+
+    padding: 30px;
+}
+
+/* =========================
+   HEADER TEXT
+========================= */
+
+.subtitle {
+
+    font-size: 13px;
+
+    letter-spacing: 5px;
+
+    margin-bottom: 30px;
+
+    color: #bdbdbd;
+}
+
+
+.header h1 {
+
+    font-size:
+        clamp(80px, 15vw, 190px);
+
+    line-height: 0.8;
+
+    letter-spacing: -8px;
+
+    margin-bottom: 35px;
+
+    font-weight: 800;
+}
+
+
+.main-subtitle {
+
+    font-size:
+        clamp(25px, 4vw, 45px);
+
+    letter-spacing: -1px;
+
+    margin-bottom: 50px;
+
+    color: #e8e4da;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+button {
+
+    border: none;
+
+    cursor: pointer;
+
+    font-family: inherit;
+}
+
+
+#startButton {
+
+    padding: 17px 34px;
+
+    border-radius: 50px;
+
+    background: #f3efe6;
+
+    color: #202020;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    transition:
+        transform 0.3s,
+        background 0.3s;
+}
+
+
+#startButton:hover {
+
+    transform: translateY(-4px);
+
+    background: white;
+}
+
+
+/* =========================
+   GENERAL SECTIONS
+========================= */
+
+section {
+
+    padding:
+        130px 8%;
+}
+
+
+.section-label {
+
+    font-size: 12px;
+
+    letter-spacing: 4px;
+
+    font-weight: bold;
+
+    margin-bottom: 22px;
+
+    color: #777;
+}
+
+
+h2 {
+
+    font-size:
+        clamp(45px, 7vw, 85px);
+
+    line-height: 0.95;
+
+    letter-spacing: -4px;
+
+    margin-bottom: 35px;
+}
+
+
+/* =========================
+   INTRO
+========================= */
+
+.intro {
+
+    min-height: 75vh;
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+
+.intro h2 {
+
+    max-width: 900px;
+}
+
+
+.intro-text {
+
+    max-width: 720px;
+
+    font-size: 21px;
+
+    color: #5d5d5d;
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   TIMELINE SECTION
+========================= */
+
+.timeline-section {
+
+    background: #1c1c1c;
+
+    color: white;
+
+    overflow: hidden;
+}
+
+
+.timeline-section .section-label {
+
+    color: #888;
+}
+
+
+.timeline-section h2 {
+
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   TIMELINE
+========================= */
+
+.timeline {
+
+    max-width: 1250px;
+
+    margin: 70px auto 0;
+
+    display: flex;
+
+    gap: 25px;
+
+    overflow-x: auto;
+
+    padding:
+        50px 10px 60px;
+
+    position: relative;
+
+    scrollbar-width: thin;
+
+    scrollbar-color:
+        #555 transparent;
+}
+
+
+
+/* =========================
+   TIMELINE CARD
+========================= */
+
+.timeline-card {
+
+    position: relative;
+
+    min-width: 310px;
+
+    padding: 30px;
+
+    border: 1px solid #444;
+
+    border-radius: 24px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #292929,
+            #222222
+        );
+
+    cursor: pointer;
+
+    transition:
+        transform 0.35s,
+        border-color 0.35s,
+        background 0.35s;
+
+    z-index: 1;
+}
+
+
+.timeline-card:hover {
+
+    transform:
+        translateY(-12px);
+
+    border-color: #aaa;
+
+    background: #303030;
+}
+
+
+/* =========================
+   TIMELINE DOT
+========================= */
+
+.timeline-card::before {
+    position: absolute;
+
+    top: 91px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 16px;
+
+    height: 16px;
+
+    border-radius: 50%;
+
+    background: #f3efe6;
+
+    border: 4px solid #292929;
+
+    transition: 0.3s;
+}
+
+
+/* =========================
+   ICON
+========================= */
+
+.timeline-icon {
+
+    font-size: 58px;
+
+    text-align: center;
+
+    margin-bottom: 15px;
+
+    filter:
+        grayscale(0.2);
+}
+
+
+/* =========================
+   YEAR
+========================= */
+
+.timeline-year {
+
+    display: block;
+
+    text-align: center;
+
+    font-size: 12px;
+
+    letter-spacing: 3px;
+
+    color: #888;
+
+    margin-bottom: 45px;
+}
+
+
+/* =========================
+   CARD TITLE
+========================= */
+
+.timeline-card h3 {
+
+    font-size: 27px;
+
+    line-height: 1.1;
+
+    text-align: center;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   CARD DESCRIPTION
+========================= */
+
+.timeline-card > p {
+
+    color: #bbb;
+
+    font-size: 15px;
+
+    text-align: center;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   FACTS
+========================= */
+
+.facts {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 9px;
+
+    margin-top: 25px;
+}
+
+
+.fact {
+
+    padding:
+        11px 13px;
+
+    border-radius: 10px;
+
+    background:
+        rgba(255, 255, 255, 0.05);
+
+    color: #cfcfcf;
+
+    font-size: 13px;
+
+    line-height: 1.4;
+}
+
+
+.fact span {
+
+    color: white;
+
+    font-weight: bold;
+
+    margin-right: 7px;
+}
+
+
+/* =========================
+   COMPARISON
+========================= */
+
+.comparison-section {
+
+    background: #f3efe6;
+}
+
+
+.comparison {
+
+    max-width: 1100px;
+
+    margin: 70px auto 0;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 25px;
+}
+
+
+.comparison-card {
+
+    position: relative;
+
+    padding: 45px;
+
+    min-height: 320px;
+
+    border-radius: 25px;
+
+    background: white;
+
+    border: 1px solid #ddd;
+
+    transition:
+        transform 0.3s,
+        box-shadow 0.3s;
+}
+
+
+.comparison-card:hover {
+
+    transform:
+        translateY(-8px);
+
+    box-shadow:
+        0 25px 60px
+        rgba(0, 0, 0, 0.1);
+}
+
+
+.comparison-year {
+
+    font-size: 11px;
+
+    letter-spacing: 3px;
+
+    color: #888;
+
+    font-weight: bold;
+}
+
+
+.comparison-card h3 {
+
+    font-size: 38px;
+
+    margin: 25px 0 20px;
+
+    letter-spacing: -2px;
+}
+
+
+.comparison-card p {
+
+    color: #5d5d5d;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+}
+.comparison-section h2 span {
+
+    font-size: 0.45em;
+
+    color: #999;
+
+    letter-spacing: 0;
+
+}
+
+
+.comparison-intro {
+
+    max-width: 750px;
+
+    font-size: 20px;
+
+    color: #666;
+
+    line-height: 1.7;
+
+    margin-bottom: 80px;
+}
+
+
+.comparison-result {
+
+    margin-top: 25px;
+
+    padding-top: 18px;
+
+    border-top:
+        1px solid #e1ddd5;
+
+    color: #888;
+
+    font-size: 12px;
+
+    letter-spacing: 0.5px;
+}
+
+
+.comparison-conclusion {
+
+    max-width: 1100px;
+
+    margin: 80px auto 0;
+
+    padding: 55px;
+
+    border-radius: 28px;
+
+    background: #d9d2c5;
+}
+
+
+.comparison-conclusion span {
+
+    font-size: 11px;
+
+    letter-spacing: 4px;
+
+    font-weight: bold;
+
+    color: #777;
+}
+
+
+.comparison-conclusion h3 {
+
+    max-width: 900px;
+
+    margin-top: 25px;
+
+    font-size: clamp(
+        28px,
+        4vw,
+        50px
+    );
+
+    line-height: 1.05;
+
+    letter-spacing: -2px;
+}
+
+
+.comparison-conclusion p {
+
+    max-width: 800px;
+
+    margin-top: 25px;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+
+    color: #5c5c5c;
+}
+
+/* =========================
+   CONCLUSION
+========================= */
+
+.conclusion {
+
+    min-height: 70vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    background: #d9d2c5;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+.conclusion::before {
+
+    content: "XX";
+
+    position: absolute;
+
+    font-size: 40vw;
+
+    font-weight: 900;
+
+    color:
+        rgba(255, 255, 255, 0.18);
+
+    line-height: 1;
+
+    z-index: 0;
+}
+
+
+.conclusion > * {
+
+    position: relative;
+
+    z-index: 1;
+}
+
+
+.conclusion p:last-child {
+
+    max-width: 800px;
+
+    font-size: 21px;
+
+    color: #555;
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   MODAL
+========================= */
+
+.modal {
+
+    position: fixed;
+
+    inset: 0;
+
+    background:
+        rgba(0, 0, 0, 0.78);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 20px;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition: 0.3s;
+
+    z-index: 1000;
+}
+
+
+.modal.active {
+
+    opacity: 1;
+
+    visibility: visible;
+}
+
+
+.modal-content {
+
+    position: relative;
+
+    width: 100%;
+
+    max-width: 720px;
+
+    max-height: 90vh;
+
+    overflow-y: auto;
+
+    padding: 60px;
+
+    border-radius: 30px;
+
+    background: #f3efe6;
+
+    color: #202020;
+
+    box-shadow:
+        0 30px 100px
+        rgba(0, 0, 0, 0.5);
+
+    transform:
+        translateY(30px)
+        scale(0.97);
+
+    transition: 0.35s;
+}
+
+
+.modal.active .modal-content {
+
+    transform:
+        translateY(0)
+        scale(1);
+}
+
+
+/* =========================
+   CLOSE
+========================= */
+
+.close-modal {
+
+    position: absolute;
+
+    top: 20px;
+
+    right: 25px;
+
+    width: 45px;
+
+    height: 45px;
+
+    border-radius: 50%;
+
+    background: #202020;
+
+    color: white;
+
+    font-size: 28px;
+
+    transition: 0.3s;
+}
+
+
+.close-modal:hover {
+
+    transform: rotate(90deg);
+
+    background: #444;
+}
+
+
+/* =========================
+   MODAL CONTENT
+========================= */
+
+.modal-icon {
+
+    font-size: 80px;
+
+    text-align: center;
+
+    margin-bottom: 10px;
+}
+
+
+.modal-year {
+
+    text-align: center;
+
+    font-size: 12px;
+
+    letter-spacing: 4px;
+
+    color: #888;
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+
+.modal-content h2 {
+
+    text-align: center;
+
+    font-size:
+        clamp(40px, 6vw, 60px);
+
+    letter-spacing: -3px;
+
+    margin-bottom: 25px;
+}
+
+
+.modal-description {
+
+    max-width: 600px;
+
+    margin: auto;
+
+    text-align: center;
+
+    color: #555;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+}
+
+
+.modal-facts {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+
+    margin-top: 30px;
+}
+
+
+.modal-fact {
+
+    padding: 16px 20px;
+
+    border-radius: 14px;
+
+    background: white;
+
+    font-size: 15px;
+
+    box-shadow:
+        0 5px 20px
+        rgba(0, 0, 0, 0.05);
+}
+
+
+.modal-fact span {
+
+    margin-right: 10px;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+
+    padding: 45px 20px;
+
+    text-align: center;
+
+    background: #141414;
+
+    color: white;
+}
+
+
+.footer p {
+
+    margin: 5px;
+
+    color: #888;
+
+    font-size: 13px;
+}
+
+
+.footer p:first-child {
+
+    color: #ddd;
+
+    font-size: 15px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    section {
+
+        padding:
+            90px 20px;
+    }
+
+
+    .header h1 {
+
+        letter-spacing: -4px;
+    }
+
+
+    .header::after {
+
+        font-size: 9px;
+
+        letter-spacing: 2px;
+    }
+
+
+    h2 {
+
+        letter-spacing: -2px;
+    }
+
+
+    .timeline {
+
+        margin-top: 40px;
+
+        padding-left: 0;
+
+        padding-right: 0;
+    }
+
+
+    .timeline-card {
+
+        min-width: 280px;
+
+        padding: 25px;
+    }
+
+
+    .comparison {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .comparison-card {
+
+        padding: 30px;
+
+        min-height: auto;
+    }
+
+
+    .modal-content {
+
+        padding: 45px 25px;
+    }
+
+}
+/* =========================
+   ИЛЛЮСТРАЦИИ В КАРТОЧКАХ
+   ========================= */
+
+.timeline-image {
+    width: 100%;
+    height: 180px;
+
+    overflow: hidden;
+
+    border-radius: 16px;
+
+    margin-bottom: 15px;
+
+    background: #e8dfcf;
+}
+
+.timeline-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.5s ease;
+}
+
+.timeline-card:hover .timeline-image img {
+    transform: scale(1.04);
+}
+
+
+.timeline-mini-icon {
+    text-align: center;
+
+    font-size: 25px;
+
+    margin-bottom: 8px;
+}
+
+
+/* =========================
+   ПОДСКАЗКА НА КАРТОЧКЕ
+   ========================= */
+
+.open-hint {
+    margin-top: 25px;
+
+    padding-top: 15px;
+
+    border-top: 1px solid #3d3d3d;
+
+    text-align: center;
+
+    color: #777;
+
+    font-size: 12px;
+
+    letter-spacing: 1px;
+
+    transition: color 0.3s;
+}
+
+.timeline-card:hover .open-hint {
+    color: #ddd;
+}
+
+
+/* =========================
+   КАРТИНКА В MODAL
+   ========================= */
+
+.modal-image {
+    width: 100%;
+
+    height: 300px;
+
+    display: block;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+
+    margin-bottom: 20px;
+
+    background: #e8dfcf;
+}
+
+
+/* =========================
+   ПОДРОБНЫЙ РАССКАЗ
+   ========================= */
+
+.modal-details {
+
+    margin-top: 40px;
+
+    padding-top: 30px;
+
+    border-top: 1px solid #d5cec1;
+
+}
+
+
+.modal-details-label {
+
+    font-size: 11px;
+
+    letter-spacing: 3px;
+
+    font-weight: bold;
+
+    color: #888;
+
+    margin-bottom: 18px;
+
+}
+
+
+.modal-detailed {
+
+    color: #454545;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    white-space: pre-line;
+
+}
+
+
+/* =========================
+   ЗАГОЛОВОК ФАКТОВ
+   ========================= */
+
+.modal-facts-title {
+
+    margin-top: 40px;
+
+    margin-bottom: 15px;
+
+    font-size: 11px;
+
+    letter-spacing: 3px;
+
+    font-weight: bold;
+
+    color: #888;
+
+}
+
+
+/* =========================
+   ФАКТЫ В MODAL
+   ========================= */
+
+.modal-fact {
+
+    padding: 16px 20px;
+
+    border-radius: 14px;
+
+    background: white;
+
+    font-size: 15px;
+
+    line-height: 1.5;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.05);
+
+    transition:
+        transform 0.25s,
+        box-shadow 0.25s;
+}
+
+.modal-fact:hover {
+
+    transform: translateX(5px);
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 700px) {
+
+    .timeline-image {
+        height: 160px;
+    }
+
+    .modal-image {
+        height: 210px;
+    }
+
+    .modal-detailed {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+}
+/* =========================
+   БЛОК «КАК ИЗМЕНИЛСЯ МИР»
+   ========================= */
+
+.change-grid {
+
+    max-width: 1200px;
+
+    margin: 90px auto 0;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+
+.change-card {
+
+    position: relative;
+
+    min-height: 300px;
+
+    padding: 32px;
+
+    border:
+        1px solid #ddd7cc;
+
+    border-radius: 22px;
+
+    background: #eee9df;
+
+    transition:
+        transform 0.3s,
+        background 0.3s,
+        box-shadow 0.3s;
+}
+
+
+.change-card:hover {
+
+    transform:
+        translateY(-8px);
+
+    background: white;
+
+    box-shadow:
+        0 20px 50px
+        rgba(0, 0, 0, 0.08);
+}
+
+
+.change-number {
+
+    display: block;
+
+    font-size: 11px;
+
+    letter-spacing: 3px;
+
+    color: #999;
+
+    margin-bottom: 25px;
+}
+
+
+.change-icon {
+
+    font-size: 38px;
+
+    margin-bottom: 20px;
+}
+
+
+.change-card h3 {
+
+    font-size: 27px;
+
+    letter-spacing: -1px;
+
+    margin-bottom: 15px;
+}
+
+
+.change-card p {
+
+    color: #626262;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   БОЛЬШОЙ ВЫВОД
+   ========================= */
+
+.big-change {
+
+    max-width: 1200px;
+
+    margin: 80px auto 0;
+
+    padding: 55px;
+
+    border-radius: 28px;
+
+    background: #202020;
+
+    color: white;
+
+    display: grid;
+
+    grid-template-columns:
+        0.35fr 1fr;
+
+    gap: 50px;
+}
+
+
+.big-change-year {
+
+    font-size: 15px;
+
+    letter-spacing: 4px;
+
+    color: #888;
+}
+
+
+.big-change-content h3 {
+
+    max-width: 800px;
+
+    font-size: clamp(
+        30px,
+        4vw,
+        52px
+    );
+
+    line-height: 1;
+
+    letter-spacing: -2px;
+
+    margin-bottom: 30px;
+}
+
+
+.big-change-content p {
+
+    max-width: 800px;
+
+    color: #bdbdbd;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    margin-bottom: 20px;
+}
+@media (max-width: 900px) {
+
+    .change-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+    .big-change {
+
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+
+        padding: 35px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .change-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+/* =========================
+   УКРАШЕНИЕ БЛОКА ИЗМЕНЕНИЙ
+========================= */
+
+.intro {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Большие годы на фоне */
+
+.intro::before {
+    content: "1900";
+    position: absolute;
+    top: 70px;
+    right: -30px;
+    font-size: clamp(120px, 20vw, 260px);
+    font-weight: 800;
+    letter-spacing: -15px;
+    color: rgba(0, 0, 0, 0.035);
+    line-height: 1;
+    pointer-events: none;
+}
+
+.intro::after {
+    content: "2000";
+    position: absolute;
+    bottom: 20px;
+    left: -30px;
+    font-size: clamp(120px, 20vw, 260px);
+    font-weight: 800;
+    letter-spacing: -15px;
+    color: rgba(0, 0, 0, 0.035);
+    line-height: 1;
+    pointer-events: none;
+}
+
+/* Карточки изменений */
+
+.change-grid {
+    position: relative;
+    z-index: 2;
+}
+
+.change-card {
+    position: relative;
+    overflow: hidden;
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
+}
+
+.change-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: #202020;
+    transition: width 0.4s ease;
+}
+
+.change-card:hover::before {
+    width: 100%;
+}
+
+.change-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.1);
+    border-color: #bdb7ab;
+}
+
+/* Номер карточки */
+
+.change-number {
+    position: absolute;
+    right: 25px;
+    top: 18px;
+    font-size: 55px;
+    font-weight: 800;
+    line-height: 1;
+    color: rgba(0, 0, 0, 0.045);
+}
+
+/* Иконка */
+
+.change-icon {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    background: #202020;
+    color: white;
+
+    font-size: 22px;
+    margin-bottom: 25px;
+
+    transition:
+        transform 0.35s ease,
+        border-radius 0.35s ease;
+}
+
+.change-card:hover .change-icon {
+    transform: rotate(8deg) scale(1.08);
+    border-radius: 15px;
+}
+.big-change {
+    position: relative;
+    overflow: hidden;
+    margin-top: 70px;
+    padding: 65px;
+    border-radius: 30px;
+    background: #202020;
+    color: white;
+}
+
+/* Огромная стрелка на фоне */
+
+.big-change::after {
+    content: "→";
+    position: absolute;
+    right: 35px;
+    bottom: -45px;
+
+    font-size: 220px;
+    font-weight: 800;
+    line-height: 1;
+
+    color: rgba(255, 255, 255, 0.04);
+}
+
+/* Маленькая декоративная линия */
+
+.big-change::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 65px;
+
+    width: 100px;
+    height: 4px;
+
+    background: #f3efe6;
+}
+/* =========================
+   СРАВНЕНИЕ 1900 / 2000
+========================= */
+
+.comparison-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.comparison-section::before {
+    content: "1900";
+    position: absolute;
+    left: -25px;
+    top: 100px;
+
+    font-size: clamp(130px, 22vw, 280px);
+    font-weight: 800;
+    letter-spacing: -15px;
+
+    color: rgba(0, 0, 0, 0.035);
+    pointer-events: none;
+}
+
+.comparison-section::after {
+    content: "2000";
+    position: absolute;
+    right: -25px;
+    bottom: 100px;
+
+    font-size: clamp(130px, 22vw, 280px);
+    font-weight: 800;
+    letter-spacing: -15px;
+
+    color: rgba(0, 0, 0, 0.035);
+    pointer-events: none;
+}
+.comparison-card::after {
+    content: "+";
+    position: absolute;
+
+    right: 25px;
+    bottom: 15px;
+
+    font-size: 35px;
+    font-weight: 300;
+
+    color: rgba(0, 0, 0, 0.08);
+
+    transition: transform 0.35s ease;
+}
+
+.comparison-section h2 span {
+    display: block;
+    margin-top: 20px;
+
+    font-size: 16px;
+    letter-spacing: 4px;
+    font-weight: 600;
+
+    color: #888;
+}
+.comparison-card:hover::after {
+    transform: rotate(90deg);
+    .comparison-section h2 {
+    position: relative;
+    z-index: 2;
+}
+
+.comparison-section h2::after {
+    content: "";
+    display: block;
+
+    width: 90px;
+    height: 5px;
+
+    margin-top: 25px;
+
+    background: #202020;
+}
+}
+/* =========================
+   ФИНАЛЬНЫЙ БЛОК
+========================= */
+
+.conclusion {
+    position: relative;
+    min-height: 75vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    overflow: hidden;
+
+    background: #202020;
+    color: white;
+}
+
+.conclusion .section-label {
+    color: #888;
+}
+
+.conclusion h2,
+.conclusion p {
+    position: relative;
+    z-index: 2;
+}
+
+.conclusion h2 {
+    max-width: 900px;
+}
+
+.conclusion > p:last-child {
+    max-width: 700px;
+    color: #bdbdbd;
+    font-size: 19px;
+    line-height: 1.8;
+}
+.footer {
+    position: relative;
+    overflow: hidden;
+
+    padding: 60px 8%;
+
+    background: #111;
+    color: #aaa;
+
+    border-top: 1px solid #292929;
+}
+
+.footer::before {
+    content: "XX";
+    position: absolute;
+
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    font-size: 150px;
+    font-weight: 800;
+    line-height: 1;
+
+    color: rgba(255, 255, 255, 0.025);
+
+    pointer-events: none;
+}
+
+.footer p {
+    position: relative;
+    z-index: 2;
+}
+
+.footer p:first-child {
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.footer p:last-child {
+    font-size: 13px;
+    color: #666;
+}
+.section-label {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.section-label::before {
+    content: "";
+    width: 35px;
+    height: 2px;
+    background: currentColor;
+    opacity: 0.7;
+}
+/* =========================
+   ПРЕДМЕТЫ XX ВЕКА
+========================= */
+
+.objects-section {
+    position: relative;
+
+    padding: 130px 6%;
+
+    background: #f3efe6;
+
+    overflow: hidden;
+}
+
+
+/* Заголовок */
+
+.objects-section h2 {
+    position: relative;
+    z-index: 2;
+
+    max-width: 800px;
+
+    margin-top: 20px;
+
+    font-size: clamp(
+        48px,
+        7vw,
+        100px
+    );
+
+    line-height: 0.95;
+
+    letter-spacing: -5px;
+}
+
+
+/* Описание */
+
+.objects-intro {
+    position: relative;
+    z-index: 2;
+
+    max-width: 650px;
+
+    margin-top: 30px;
+
+    color: #666;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+}
+
+
+/* Линия */
+
+.objects-line {
+    position: relative;
+
+    max-width: 1400px;
+
+    margin: 100px auto 0;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(6, 1fr);
+
+    gap: 25px;
+}
+
+
+/* Горизонтальная линия */
+
+.objects-line::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+
+    top: 250px;
+
+    height: 1px;
+
+    background: #c9c3b8;
+
+    z-index: 0;
+}
+
+
+/* Карточка */
+
+.object-item {
+    position: relative;
+
+    z-index: 2;
+
+    text-align: center;
+}
+
+
+/* Изображение */
+
+.object-image {
+    width: 180px;
+    height: 180px;
+
+    margin: 0 auto 35px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #f3efe6;
+
+    border-radius: 50%;
+
+    border:
+        1px solid #cfc8bb;
+
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease,
+        background 0.4s ease;
+}
+
+
+.object-image img {
+    width: 125px;
+    height: 125px;
+
+    object-fit: contain;
+
+    transition:
+        transform 0.4s ease;
+}
+
+
+.object-item:hover .object-image {
+    transform: translateY(-10px);
+
+    background: white;
+
+    box-shadow:
+        0 25px 50px
+        rgba(0, 0, 0, 0.1);
+}
+
+
+.object-item:hover .object-image img {
+    transform: scale(1.12);
+}
+
+
+/* Год */
+
+.object-year {
+    display: inline-block;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    background: #202020;
+
+    color: white;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+}
+
+
+/* Название */
+
+.object-item h3 {
+    margin-top: 18px;
+
+    font-size: 22px;
+
+    letter-spacing: -0.5px;
+}
+
+
+/* Описание */
+
+.object-item p {
+    margin-top: 10px;
+
+    color: #777;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+}
+
+
+/* Большие годы на фоне */
+
+.objects-section::before {
+    content: "1900";
+
+    position: absolute;
+
+    top: 20px;
+    right: -30px;
+
+    font-size:
+        clamp(150px, 25vw, 330px);
+
+    font-weight: 800;
+
+    letter-spacing: -20px;
+
+    color:
+        rgba(0, 0, 0, 0.035);
+
+    pointer-events: none;
+}
+
+
+.objects-section::after {
+    content: "2000";
+
+    position: absolute;
+
+    bottom: -30px;
+    left: -30px;
+
+    font-size:
+        clamp(150px, 25vw, 330px);
+
+    font-weight: 800;
+
+    letter-spacing: -20px;
+
+    color:
+        rgba(0, 0, 0, 0.035);
+
+    pointer-events: none;
+}
+@media (max-width: 1100px) {
+
+    .objects-line {
+        grid-template-columns:
+            repeat(3, 1fr);
+
+        row-gap: 70px;
+    }
+
+    .objects-line::before {
+        display: none;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .objects-section {
+        padding: 90px 25px;
+    }
+
+    .objects-line {
+        grid-template-columns: 1fr;
+    }
+
+    .object-image {
+        width: 200px;
+        height: 200px;
+    }
+
+}
+/* =========================
+   АНИМАЦИЯ ПРЕДМЕТОВ
+   ========================= */
+
+.object-item {
+    opacity: 0;
+    transform: translateY(45px);
+    transition:
+        opacity 0.7s ease,
+        transform 0.7s ease;
+}
+
+.object-item.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Предметы появляются с небольшой задержкой */
+
+.object-item:nth-child(1).is-visible {
+    transition-delay: 0.05s;
+}
+
+.object-item:nth-child(2).is-visible {
+    transition-delay: 0.15s;
+}
+
+.object-item:nth-child(3).is-visible {
+    transition-delay: 0.25s;
+}
+
+.object-item:nth-child(4).is-visible {
+    transition-delay: 0.35s;
+}
+
+.object-item:nth-child(5).is-visible {
+    transition-delay: 0.45s;
+}
+
+.object-item:nth-child(6).is-visible {
+    transition-delay: 0.55s;
+}

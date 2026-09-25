@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+<rect width="800" height="500" rx="36" fill="#e8dfcf"/>
+<g stroke="#252525" stroke-width="8" stroke-linejoin="round">
+<rect x="150" y="120" width="500" height="260" rx="20" fill="#b7aa93"/>
+<rect x="205" y="165" width="390" height="150" rx="10" fill="#252525"/>
+<path d="M235 285h330" stroke="#e8dfcf"/>
+<path d="M300 380v45M500 380v45M255 425h290" fill="none"/>
+<rect x="670" y="275" width="65" height="105" rx="8" fill="#b7aa93"/>
+<rect x="685" y="295" width="35" height="45" fill="#252525"/>
+<circle cx="702" cy="360" r="8" fill="#252525"/>
+</g>
+<text x="60" y="70" font-family="Arial,sans-serif" font-size="28" letter-spacing="5" fill="#252525">1980—1990</text>
+<text x="60" y="105" font-family="Arial,sans-serif" font-size="16" letter-spacing="2" fill="#666">ПЕРСОНАЛЬНЫЙ КОМПЬЮТЕР</text>
+</svg>
